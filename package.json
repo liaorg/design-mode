@@ -7,6 +7,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "pm2 start ecosystem.config.js",
+        "start:dev": "pm2 start ecosystem.config.js --watch",
         "stop": " pm2 stop app1"
     },
     "author": "",

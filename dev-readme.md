@@ -52,8 +52,10 @@ pm2 start app.js -i 4 #后台运行pm2，启动4个app.js
 2. 使用 ts-node 启动 node
 
 ```
-npm install --save-dev ts-node
+npm install -g ts-node
 ts-node app.ts
+npm install -g ts-node-dev
+ts-node-dev src/app.ts
 ```
 
 3. 增加脚本
