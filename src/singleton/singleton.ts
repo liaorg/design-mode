@@ -24,3 +24,17 @@ export class Singleton {
         return this.instance;
     }
 }
+
+class SingletonOne {
+    constructor() {}
+}
+// 导出一个可以缓存结果的函数以生成单例
+export const getSingleon = (() => {
+    let instance: SingletonOne;
+    return function () {
+        if (!instance) {
+            instance = new SingletonOne();
+        }
+        return instance;
+    };
+})();
