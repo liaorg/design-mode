@@ -37,6 +37,7 @@ var SingletonOne = /** @class */ (function () {
     }
     return SingletonOne;
 }());
+// 导出一个可以缓存结果的函数以生成单例
 exports.getSingleon = (function () {
     var instance;
     return function () {
